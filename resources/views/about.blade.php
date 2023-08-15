@@ -5,7 +5,7 @@
     <x-bread />
     <div class="about-top-wrapper d-flex justify-content-between">
         <div class="about-image mt-auto">
-            <img src="{{ asset('storage/images/TUFSPOT_about_earth.png') }}" style="width:440px; height:530px;" class="" alt="...">
+            <img src="{{ asset('image/TUFSPOT_about_earth.png') }}" style="width:440px; height:530px;" class="" alt="...">
         </div>
         <div class="about-top">
             <p class="about-top-title">
@@ -51,7 +51,7 @@
             <div class="about-theme-wrapper d-flex">
                 <div class="about-theme d-flex flex-column align-items-center">
                     <p class="about-theme-title"><span>A</span>cademia</p>
-                    <img src="{{ asset('storage/images/about_academia.svg') }}" class="about-theme-image" alt="...">
+                    <img src="{{ asset('image/about_academia.svg') }}" class="about-theme-image" alt="...">
                     <p class="about-theme-text">
                         東京外大が紡いでいるアカデミアの<br>
                         知見をシェアすることで、<br>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="about-theme d-flex flex-column align-items-center">
                     <p class="about-theme-title"><span>B</span>usiness</p>
-                    <img src="{{ asset('storage/images/about_business.svg') }}" class="about-theme-image" alt="...">
+                    <img src="{{ asset('image/about_business.svg') }}" class="about-theme-image" alt="...">
                     <p class="about-theme-text">
                         経済や各ビジネス分野の<br>
                         グローバルな知見や、キャリアの<br>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="about-theme d-flex flex-column align-items-center">
                     <p class="about-theme-title"><span>C</span>ulture</p>
-                    <img src="{{ asset('storage/images/about_culture.svg') }}" class="about-theme-image" alt="...">
+                    <img src="{{ asset('image/about_culture.svg') }}" class="about-theme-image" alt="...">
                     <p class="about-theme-text">
                         カルチャー分野の知見や、<br>
                         各国で過ごす同窓生のエッセイを<br>
@@ -96,7 +96,7 @@
                                 お互いの存在を確かめ合う。<br>
                                 そこから新たな知見が生まれることを願って。
                             </p>
-                            <img src="{{ asset('storage/images/about_pot.svg') }}" class="about-concept-spot-image" alt="">
+                            <img src="{{ asset('image/about_pot.svg') }}" class="about-concept-spot-image" alt="">
                         </div>
                     </div>
                     <div class="about-concept-spot d-flex flex-column justify-content-center align-items-center">
@@ -110,7 +110,7 @@
                                 となる。そんな連鎖を生む一つのきっかけになれればと<br>
                                 考えています。
                             </p>
-                            <img src="{{ asset('storage/images/about_spot.svg') }}" class="about-concept-spot-image" alt="">
+                            <img src="{{ asset('image/about_spot.svg') }}" class="about-concept-spot-image" alt="">
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@
                 {{-- <div class="carousel" data-flickity='{ "wrapAround": true,"adaptiveHeight": true}'> --}}
                 <div class="carousel-cell">
                     <div class="d-flex top-carousel-wrapper">
-                        <img src="{{ asset('storage/images/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
                         <div class="top-carousel-text-wrapper d-flex flex-column justify-content-center">
                             <p class="top-carousel-title">
                                 アンコールワットにまた行った。<br>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="carousel-cell carousel-cell--height2">
                     <div class="d-flex top-carousel-wrapper">
-                        <img src="{{ asset('storage/images/ハロン湾.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/ハロン湾.jpeg') }}" class="d-block top-carousel-image" alt="...">
                         <div class="top-carousel-text-wrapper d-flex flex-column justify-content-center">
                             <p class="top-carousel-title">
                                 ハロン湾にまた行った。<br>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="carousel-cell carousel-cell--height3">
                     <div class="d-flex top-carousel-wrapper">
-                        <img src="{{ asset('storage/images/スイティエン.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/スイティエン.jpeg') }}" class="d-block top-carousel-image" alt="...">
                         <div class="top-carousel-text-wrapper d-flex flex-column justify-content-center">
                             <p class="top-carousel-title">
                                 スイティエンにまた行った。<br>
@@ -109,7 +109,7 @@
             {{-- <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 3000 }'> --}}
             {{-- <div class="gallery-cell">
                     <div class="d-flex">
-                        <img src="{{ asset('storage/images/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
                         <div class="top-carousel-text">
                             <p>アンコールワットにまた行った。<br>
                                 そしたら新しい発見があったはなし。
@@ -152,7 +152,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-flex">
-                            <img src="{{ asset('storage/images/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                            <img src="{{ asset('image/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
                             <div class="top-carousel-text">
                                 <p>アンコールワットにまた行った。<br>
                                     そしたら新しい発見があったはなし。
@@ -180,10 +180,10 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('storage/images/ハロン湾.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/ハロン湾.jpeg') }}" class="d-block top-carousel-image" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('storage/images/スイティエン.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/スイティエン.jpeg') }}" class="d-block top-carousel-image" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
