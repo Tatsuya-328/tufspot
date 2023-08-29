@@ -3,25 +3,23 @@
     <x-header />
     <div class="top-wrapper">
         <div class="top-ariticle-slide">
+            {{-- <div class="carousel-right">hoge</div> --}}
             {{-- <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": 3000, "adaptiveHeight": true }'> --}}
-            <div class="carousel" data-flickity='{ "wrapAround": true,"adaptiveHeight": true, "cellAlign": "left"}'>
+            {{-- <div class="carousel" data-flickity='{ "wrapAround": true}'> --}}
+            <div class="carousel" data-flickity='{ "wrapAround": true, "cellAlign": "left"}'>
                 {{-- <div class="carousel" data-flickity='{ "wrapAround": true,"adaptiveHeight": true}'> --}}
-                <div class="carousel-cell">
+                <div class="carousel-cell" style="left: 400px">
                     <div class="d-flex top-carousel-wrapper">
-                        <img src="{{ asset('image/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
-                        <div class="top-carousel-text-wrapper d-flex flex-column justify-content-center">
+                        <div class="d-block top-carousel-image-wrapper">
+                            <img src="{{ asset('image/アンコールワット.jpeg') }}" class="top-carousel-image" alt="...">
+                        </div>
+                        <div class="top-carousel-text-wrapper d-flex flex-column ">
                             <p class="top-carousel-title">
                                 アンコールワットにまた行った。<br>
                                 そしたら新しい発見があったはなし。
                             </p>
                             <p class="top-carousel-text">
-                                テキストが入りますテキストが入りますテキストが<br>
-                                入りますテキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入りますテキストが<br>
-                                テキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入りますテキストが<br>
-                                テキストが入りますテキストが入ります入りますテ
+                                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが
                             </p>
                             <p class="top-carousel-hashtag">
                                 #ハッシュタグ #ハッシュタグ
@@ -40,20 +38,16 @@
                 </div>
                 <div class="carousel-cell carousel-cell--height2">
                     <div class="d-flex top-carousel-wrapper">
-                        <img src="{{ asset('image/ハロン湾.jpeg') }}" class="d-block top-carousel-image" alt="...">
-                        <div class="top-carousel-text-wrapper d-flex flex-column justify-content-center">
+                        <div class="d-block top-carousel-image-wrapper">
+                            <img src="{{ asset('image/ハロン湾.jpeg') }}" class="top-carousel-image" alt="...">
+                        </div>
+                        <div class="top-carousel-text-wrapper d-flex flex-column ">
                             <p class="top-carousel-title">
                                 ハロン湾にまた行った。<br>
                                 そしたら新しい発見があったはなし。
                             </p>
                             <p class="top-carousel-text">
-                                テキストが入りますテキストが入りますテキストが<br>
-                                入りますテキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入りますテキストが<br>
-                                テキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入りますテキストが<br>
-                                テキストが入りますテキストが入ります入りますテ
+                                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが
                             </p>
                             <p class="top-carousel-hashtag">
                                 #ハッシュタグ #ハッシュタグ
@@ -72,20 +66,16 @@
                 </div>
                 <div class="carousel-cell carousel-cell--height3">
                     <div class="d-flex top-carousel-wrapper">
-                        <img src="{{ asset('image/スイティエン.jpeg') }}" class="d-block top-carousel-image" alt="...">
-                        <div class="top-carousel-text-wrapper d-flex flex-column justify-content-center">
+                        <div class="d-block top-carousel-image-wrapper">
+                            <img src="{{ asset('image/スイティエン.jpeg') }}" class="top-carousel-image" alt="...">
+                        </div>
+                        <div class="top-carousel-text-wrapper d-flex flex-column ">
                             <p class="top-carousel-title">
                                 スイティエンにまた行った。<br>
                                 そしたら新しい発見があったはなし。
                             </p>
                             <p class="top-carousel-text">
-                                テキストが入りますテキストが入りますテキストが<br>
-                                入りますテキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入りますテキストが<br>
-                                テキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入ります<br>
-                                テキストが入りますテキストが入りますテキストが<br>
-                                テキストが入りますテキストが入ります入りますテ
+                                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが
                             </p>
                             <p class="top-carousel-hashtag">
                                 #ハッシュタグ #ハッシュタグ
@@ -109,7 +99,7 @@
             {{-- <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 3000 }'> --}}
             {{-- <div class="gallery-cell">
                     <div class="d-flex">
-                        <img src="{{ asset('image/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/アンコールワット.jpeg') }}" class="d-block top-carousel-image-wrapper" alt="...">
                         <div class="top-carousel-text">
                             <p>アンコールワットにまた行った。<br>
                                 そしたら新しい発見があったはなし。
@@ -152,7 +142,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-flex">
-                            <img src="{{ asset('image/アンコールワット.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                            <img src="{{ asset('image/アンコールワット.jpeg') }}" class="d-block top-carousel-image-wrapper" alt="...">
                             <div class="top-carousel-text">
                                 <p>アンコールワットにまた行った。<br>
                                     そしたら新しい発見があったはなし。
@@ -180,10 +170,10 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('image/ハロン湾.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/ハロン湾.jpeg') }}" class="d-block top-carousel-image-wrapper" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('image/スイティエン.jpeg') }}" class="d-block top-carousel-image" alt="...">
+                        <img src="{{ asset('image/スイティエン.jpeg') }}" class="d-block top-carousel-image-wrapper" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

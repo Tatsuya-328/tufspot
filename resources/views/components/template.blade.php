@@ -18,8 +18,8 @@
     <link href="{{ asset('css/style_uru.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
-    {{-- <script src="{{ asset('js/app.js') }}" async></script>
-    <script src="{{ asset('js/uru_top.js') }}" defer></script> --}}
+    {{-- <script src="{{ asset('js/app.js') }}" async></script> --}}
+    <script src="{{ asset('js/top.js') }}" async></script>
     {{-- <script src="{{ asset('js/jquery-3.5.1.min.js') }}" defer></script> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
