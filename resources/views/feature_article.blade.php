@@ -8,12 +8,12 @@
         <div class="d-flex justify-content-center flex-wrap">
             {{-- <div class="row row-cols-3"> --}}
             <x-article_card />
-            <x-article_card />
-            <x-article_card />
+            <x-article_card_sui />
+            <x-article_card_an />
             {{-- 最終行も左寄せには、空要素入れるしかなさそう https://qiita.com/QUANON/items/e14949abab3711ca8646 --}}
             <x-article_card />
-            <x-article_card />
-            <x-article_card />
+            <x-article_card_sui />
+            <x-article_card_an />
         </div>
     </x-main>
     <x-footer />

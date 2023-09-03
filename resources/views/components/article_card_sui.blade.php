@@ -7,7 +7,7 @@
 --}}
 
 <div class="article_card" style="">
-    <img src="{{ asset('image/ハロン湾.jpeg') }}" class="article_card_img card-img-top" alt="...">
+    <img src="{{ asset('image/スイティエン.jpeg') }}" class="article_card_img card-img-top" alt="...">
     <div class="card-body">
         <p class="fw-bold article-card-text">
             ここに記事のタイトルが入ります<br>
