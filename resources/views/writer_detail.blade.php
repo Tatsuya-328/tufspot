@@ -10,10 +10,10 @@
                 <p class="writer-detail-title">
                     ▼<span>自己紹介</span>
                 </p>
-                <div class="text-center">
+                <div class="">
                     <p class="writer-detail-explain-text">
-                        ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。<br>
-                        ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。<br>
+                        ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。
+                        ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。
                         ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。ここに記事が書かれます。
                     </p>
                 </div>
@@ -54,9 +54,14 @@
                     ▼<span>記事</span>
                 </p>
                 <div class="d-flex justify-content-center flex-wrap">
-                    <x-article_card />
-                    <x-article_card />
-                    <x-article_card />
+                    {{-- <div class="row row-cols-3"> --}}
+                    <x-article_card place="ハロン湾" />
+                    <x-article_card place="スイティエン" />
+                    <x-article_card place="アンコールワット" />
+                    {{-- 最終行も左寄せには、空要素入れるしかなさそう https://qiita.com/QUANON/items/e14949abab3711ca8646 --}}
+                    <x-article_card place="ハロン湾" />
+                    <x-article_card place="スイティエン" />
+                    <x-article_card place="アンコールワット" />
                 </div>
             </div>
         </div>
