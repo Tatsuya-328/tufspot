@@ -6,6 +6,7 @@ window.onresize = window_load;
 
 //サイズの表示
 function window_load() {
+  if(document.querySelector(".flickity-slider")) {
   if (window.innerWidth >= 1440) {
     document.querySelector(".flickity-slider").style.left= "145px"
   }
@@ -20,6 +21,7 @@ function window_load() {
     }
 }
 document.querySelectorAll(".carousel-cell").forEach(element => element.style.left="0px");
+}
 
 // topslider
 $('.slider').slick({

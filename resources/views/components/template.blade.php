@@ -31,12 +31,13 @@
     {{-- スライドショー --}}
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    {{-- オリジナル --}}
-    <script src="{{ asset('js/top.js') }}" async></script>
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css" media="screen">
+    {{-- オリジナル --}}
+    <script src="{{ asset('js/top.js') }}" async></script>
 </head>
 
 <body alink=”#0056b3 class="body">

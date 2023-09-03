@@ -2,9 +2,11 @@
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between">
             {{-- <div class="header-left "> --}}
-            <a href="/" class="header-icon d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                TUF
-                <span>SPOT</span>
+            <a href="{{ route('index') }}" class="header-icon d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                {{-- TUF
+                <span>SPOT</span> --}}
+                <img src="{{ asset('image/logo_side.png') }}" class="" alt="...">
+
             </a>
             <form action="#" class="header-search search-form-011">
                 <button type="submit" aria-label="検索"></button>
