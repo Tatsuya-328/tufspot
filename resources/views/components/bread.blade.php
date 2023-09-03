@@ -23,7 +23,9 @@
             </a>
         </li> --}}
             <li class="active bread-text" aria-current="page">
-                TOP
+                <a href="{{ route('index') }}" class="text-decoration-none">
+                    TOP
+                </a>
             </li>
         </ol>
     </nav>
