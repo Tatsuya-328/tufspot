@@ -1,12 +1,5 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
+docker/db/data
+docker/phpmyadmin/sessions/*
+!docker/phpmyadmin/sessions/.gitkeep
+node_modules
 .env
-.env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
