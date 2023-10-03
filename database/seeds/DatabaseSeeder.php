@@ -1,6 +1,13 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Database\Seeds\UserSeeder;
+use Database\Seeds\PostSeeder;
+use Database\Seeds\TagSeeder;
+use Database\Seeds\SnsAccountSeeder;
+use Database\Seeds\GaigokaiMemberSeeder;
+use Database\Seeds\CategorySeeder;
+use Database\Seeds\FeatureSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +18,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(UserSeeder::class);
+        $this->call(PostSeeder::class);
+        $this->call(TagSeeder::class);
+        $this->call(CategorySeeder::class);
+        $this->call(FeatureSeeder::class);
+        $this->call(SnsAccountSeeder::class);
+        $this->call(GaigokaiMemberSeeder::class);
     }
 }

@@ -1,5 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Auth\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,47 +16,55 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
-Route::get('/top', function () {
-    return view('index');
-})->name('index');
-// カテゴリー記事詳細
-Route::get('/category_article', function () {
-    return view('category_article');
-})->name('category_article');
-// カテゴリー一覧
-Route::get('/category_list', function () {
-    return view('category_list');
-})->name('category_list');
-// 中身同じ
-Route::get('/search_result', function () {
-    return view('search_result');
-})->name('search_result');
-Route::get('/hashtag_result/{id}', function () {
-    return view('hashtag_result');
-})->name('hashtag_result');
+// Route::get('/', function () {
+//     return view('index');
+// })->name('index');
+// Route::get('/top', function () {
+//     return view('index');
+// })->name('index');
+Route::get('/', [PostController::class, 'index'])->name('index');
+Route::get('/top', [PostController::class, 'index'])->name('index');
+
+// カテゴリ・特集自体一覧（〇〇特集, ✖️✖️特集, △△特集,,,を全て表示して、それぞれのまとめへ遷移）
+// TODO テーブルはそれぞれ必要。同じ一覧で表示させるが、topでスライダーは特集ループ、グリッド表示はカテゴリーループのため
+Route::get('/category', [PostController::class, 'category'])->name('category');
+
+
+// 各カテゴリー記事一覧（Academiaのみ、や、〇〇特集のみ表示）
+// TODO トップのAcademiaとかから遷移できるように
+Route::get('/{type}/list/{slug}', [PostController::class, 'category_detail'])->name('category_detail');
+
+
+// TODO 記事検索。Contorllerの関数も用意してない。bladeは簡易用意してあるけど、componentに変数渡さないとエラーなるはず（search_result.blade）
+// TODO ハッシュタグ検索、これも用意してない。bladeを用意してあるけれど、serachとほぼ同じ内容だから、searchのblade共通で使って条件分岐の方が楽かも（hashtag_result.blade）
+// routeの書き方も、contollerもbladeも自由にかえてOK。
+// 追記）というかそもそも, serach_resultだけで事足りるかもしれない。
+// http://localhost/admin の検索フォームが参考になるかと。これプラスで別画面遷移と、検索ワードやハッシュタグを表示させれればOK。
+Route::get('/search_result', [PostController::class, 'search'])->name('search_result');
+Route::get('/hashtag_result/{tagSlug}', [PostController::class, 'hashtag'])->name('hashtag_result');
+
 // mypage
-Route::get('/mypage', function () {
-    return view('mypage');
-})->name('mypage');
+Route::get('/mypage', [UserController::class, 'mypage'])->name('mypage');
+Route::put('/mypage/update/{user}', [UserController::class, 'update'])->name('update');
+
 // ライター一覧
-Route::get('/writer', function () {
-    return view('writer_list');
-})->name('writer_list');
+Route::get('/writer', [UserController::class, 'list'])->name('writer_list');
+
 // ライター詳細
-Route::get('/writer/detail/{id}', function () {
-    return view('writer_detail');
-})->name('writer_detail');
+Route::get('/writer/{user}', [UserController::class, 'show'])->name('writer_detail');
+
 // 記事詳細
-Route::get('/article/{id}', function () {
-    return view('article_detail');
-})->name('article_detail');
+Route::get('/post/{id}', [PostController::class, 'show'])->name('post_detail');
+
 // TUFSPOTについて
 Route::get('/about', function () {
     return view('about');
 })->name('about');
 
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/logout', [LoginController::class, 'logout']);
+
+// TODO adminのURLに変更。特定ユーザーのみログイン可能に。
+Route::get('/home', function () {
+    return view('home');
+})->name('home');

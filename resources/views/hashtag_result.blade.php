@@ -2,20 +2,16 @@
     <x-slot name="title"> TUFSPOT_hashtag </x-slot>
     {{-- タイトル位置はcomponentsで呼び出したい --}}
     <x-header />
-    <x-article_list_title class="unset-shadow" listTitle="#ハッシュタグ" />
+    <x-post_list_title class="unset-shadow" listTitle="#ハッシュタグ" />
     <x-main>
-        <div class="d-flex justify-content-center flex-wrap">
-            {{-- <div class="row row-cols-3"> --}}
-            <x-article_card place="ハロン湾" />
-            <x-article_card place="スイティエン" />
-            <x-article_card place="アンコールワット" />
-            {{-- 最終行も左寄せには、空要素入れるしかなさそう https://qiita.com/QUANON/items/e14949abab3711ca8646 --}}
-            <div class="article_card">
-            </div>
-            {{-- <div class="article_card">
-            </div>
-            <div class="article_card">
-            </div> --}}
+        {{-- TODO: 検索ワードのスタイリングはいったんカテゴリーからとってきてる、要修正 --}}
+        <div class="post_list_explain d-flex flex-column justify-content-center">
+            <p class="post_list_explain_text m-0">
+                #{{ $tag_name }}
+            </p>
+        </div>
+        <div class="article-list-area">
+            <livewire:paginated-post-list :tag_slug="$tag_slug" page_flag="hashtag" />
         </div>
     </x-main>
     <x-footer />
